@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayasuriya's Portfolio</title>
+    <link rel="icon" href="C:\html\raider.jpg" type="image/x-icon">
+
+    <style>
+        body {
+            background: url('city.gif') no-repeat center center fixed; /* Change to relative path */
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: #9400D3; /* Neon violet */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        h1 {
+            font-size: 48px;
+            color: white; /* Changed to white */
+            text-shadow: 0 0 10px rgba(148, 0, 211, 0.7);
+            margin: 0; /* Removed margin to avoid overlap */
+            padding-top: 50px; /* Adjusted padding */
+            text-align: center; /* Centered the header */
+            background-color: rgba(148, 0, 211, 0.8); /* Background color for the header */
+            border-radius: 0 0 15px 15px; /* Rounded bottom edges */
+            padding: 20px 0; /* Additional padding for spacing */
+            position: relative; /* For positioning logo */
+        }
+        /* Logo styling */
+        .logo {
+            width: 100px; /* Adjust size as needed */
+            height: 100px;
+            border-radius: 50%; /* Round frame */
+            position: absolute;
+            top: 20px; /* Adjust position as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center the logo */
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+        }
+        .logo img {
+            width: 100%; /* Ensure image covers the circle */
+            height: auto; /* Maintain aspect ratio */
+        }
+        h2 {
+            font-size: 36px; /* Slightly larger for subheadings */
+            margin-top: 30px;
+        }
+        p {
+            font-size: 20px;
+            color: white;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .social-icons a {
+            margin: 0 15px;
+        }
+        .social-icons img {
+            width: 40px; /* Adjusted size of the icons */
+            transition: transform 0.3s ease;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center; /* Centering links */
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #9400D3;
+            font-size: 20px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            color: #FFFFFF;
+            transform: scale(1.1); /* Adding hover effect */
+        }
+        /* Section Styling */
+        section {
+            padding: 50px 20px;
+            margin: 20px;
+            background-color: rgba(148, 0, 211, 0.8); /* Violet background */
+            border-radius: 15px; /* Curved edges */
+            color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        /* Professional enhancements */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 10px 0;
+        }
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Back to top link */
+        .back-to-top {
+            text-align: center;
+            margin: 20px;
+            padding: 10px 20px; /* Added padding */
+            background-color: #9400D3; /* Background color */
+            color: white; /* Text color */
+            border-radius: 5px; /* Rounded edges */
+            transition: background-color 0.3s ease; /* Transition for hover effect */
+        }
+        /* Removed hover effect for back to top button */
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#clubs">Organizations & Clubs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="logo">
+            <img src="raider.jpg" alt="Logo">
+        </div>
+        <h1 id="title">Jayasuriya's <span id="dynamic-text">Portfolio</span></h1>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Jayasuriya, currently studying Computer Science Engineering at MIT with a graduation year of 2027. I am passionate about computer science and entrepreneurship, with a strong interest in creating things that benefit society.</p>
+        <p>I completed my schooling at Bharathi Matric Hr. Sec. School, scoring 586 in 12th public and 514 in 11th. My hobbies include watching business documentaries, gardening, and cycling. I am also interested in interior design and DIY projects.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C, C++, Python, Java</li>
+            <li>HTML, CSS</li>
+            <li>Web design and development</li>
+            <li>Creative problem-solving through DIY projects</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Data encryption and decryption using C++</li>
+            <li>Personal website building</li>
+        </ul>
+    </section>
+
+    <!-- Organizations & Clubs Section -->
+    <section id="clubs">
+        <h2>Organizations & Clubs</h2>
+        <ul>
+            <li>National Sports Organization (NSO)</li>
+            <li>NSS</li>
+            <li>Raptors Club</li>
+            <li>PDA Club</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, you can reach me via:</p>
+        <p>Email: <a href="mailto:jayasuriya900@gmail.com" style="color:white;">jayasuriya900@gmail.com</a></p>
+        <p>and you can also click the icons for more info</p>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://github.com/Jayasuriya-ENGINEER"><img src="gitimg.jpg" alt="GitHub"></a>
+            <a href="https://discord.gg/aEMKYn94"><img src="discord.jpg" alt="Discord"></a>
+            <a href="https://youtube.com/@suriya617"><img src="y1.jpg" alt="YouTube"></a>
+            <a href="https://www.linkedin.com/in/jayasuriya-s-39302b2b6"><img src="linkedin.jpg" alt="LinkedIn"></a>
+        </div>
+    </section>
+
+    <!-- Back to Top Link -->
+    <div class="back-to-top">
+        <a href="#home">Back to Top</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jayasuriya. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const dynamicText = document.getElementById('dynamic-text');
+        const phrases = ['Portfolio', 'Projects', 'Work', 'Achievements']; // Add more words as needed
+        let currentPhraseIndex = 0;
+
+        function typeText(phrase) {
+            dynamicText.textContent = '';
+            let index = 0;
+
+            const typing = setInterval(() => {
+                if (index < phrase.length) {
+                    dynamicText.textContent += phrase[index];
+                    index++;
+                } else {
+                    clearInterval(typing);
+                    setTimeout(() => eraseText(phrase), 1000); // Pause before erasing
+                }
+            }, 200); // Typing speed
+        }
+
+        function eraseText(phrase) {
+            let index = phrase.length;
+
+            const erasing = setInterval(() => {
+                if (index > 0) {
+                    dynamicText.textContent = phrase.substring(0, index - 1);
+                    index--;
+                } else {
+                    clearInterval(erasing);
+                    currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+                    setTimeout(() => typeText(phrases[currentPhraseIndex]), 500); // Pause before typing next
+                }
+            }, 100); // Erasing speed
+        }
+
+        // Start the typing effect
+        typeText(phrases[currentPhraseIndex]);
+    </script>
+</body>
+</html>
