@@ -151,6 +151,21 @@
             margin-top: 10px;
         }
     </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dynamicText = document.getElementById('dynamic-text');
+            const titles = ['Portfolio', 'Works', 'Projects']; // Texts to cycle through
+            let currentIndex = 0;
+
+            function changeTitle() {
+                dynamicText.textContent = titles[currentIndex]; // Set the new text
+                currentIndex = (currentIndex + 1) % titles.length; // Move to next title
+            }
+
+            setInterval(changeTitle, 2000); // Change every 2 seconds
+        });
+    </script>
 </head>
 <body>
 
@@ -169,7 +184,7 @@
         <div class="logo">
             <img src="raider.jpg" alt="Logo">
         </div>
-        <h1 id="title">Jayasuriya's <span id="dynamic-text">Portfolio</span></h1>
+        <h1 id="title">Jayasuriya's <span id="dynamic-text">Portfolio</span></h1> <!-- Dynamic text here -->
     </section>
 
     <!-- About Me Section -->
@@ -218,26 +233,28 @@
         <p>and you can also click the icons for more info</p>
         <!-- Social Media Icons -->
         <div class="social-icons">
-            <a href="https://github.com/Jayasuriya-ENGINEER"><img src="gitimg.jpg" alt="GitHub"></a>
-            <a href="https://discord.gg/aEMKYn94"><img src="discord.jpg" alt="Discord"></a>
-            <a href="https://youtube.com/@suriya617"><img src="y1.jpg" alt="YouTube"></a>
-            <a href="https://www.linkedin.com/in/jayasuriya-s-39302b2b6"><img src="linkedin.jpg" alt="LinkedIn"></a>
+            <a href="https://github.com/Jayasuriya-ENGINEER"><img src="github.png" alt="GitHub"></a>
+            <a href="https://linkedin.com/in/jayasuriya-s-39302b2b6"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://discord.gg/aEMKYn94"><img src="discord.png" alt="Discord"></a>
+            <a href="https://youtube.com/@suriya617"><img src="youtube.png" alt="YouTube"></a>
         </div>
     </section>
 
-    <!-- Back to Top Link -->
+    <!-- Back to Top -->
     <div class="back-to-top">
-        <a href="#home">Back to Top</a>
+        <a href="#home" style="text-decoration:none;color:white;">Back to Top</a>
     </div>
 
-    <!-- Chatbot Icon -->
+    <!-- Chatbot Section -->
     <div class="chatbot">
         <div class="chatbot-frame">
-            <a href="https://minichat.ai.copilot.live">
-                <img src="msg.gif" alt="Chatbot Icon">
+            <a href="https://minichatbot.ai.copilot.live/">
+                <img src="msg.gif" alt="Chat Icon">
             </a>
         </div>
-        <div class="chatbot-text">Chat with me</div>
+        <div class="chatbot-text">
+            <span>Chat with me!</span>
+        </div>
     </div>
 
     <!-- Footer -->
