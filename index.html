@@ -125,7 +125,31 @@
             border-radius: 5px; /* Rounded edges */
             transition: background-color 0.3s ease; /* Transition for hover effect */
         }
-        /* Removed hover effect for back to top button */
+
+        /* Chatbot styling */
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            text-align: center;
+        }
+        .chatbot-frame {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+            cursor: pointer;
+        }
+        .chatbot-frame img {
+            width: 100%;
+            height: auto;
+        }
+        .chatbot-text {
+            color: white;
+            font-weight: bold;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -206,48 +230,20 @@
         <a href="#home">Back to Top</a>
     </div>
 
+    <!-- Chatbot Icon -->
+    <div class="chatbot">
+        <div class="chatbot-frame">
+            <a href="https://jayamtailoring.cplt.lv">
+                <img src="C:\html\hello.gif" alt="Chatbot Icon">
+            </a>
+        </div>
+        <div class="chatbot-text">Chat with me</div>
+    </div>
+
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Jayasuriya. All Rights Reserved.</p>
+        <p>&copy; 2024 Jayasuriya's Portfolio. All rights reserved.</p>
     </footer>
 
-    <script>
-        const dynamicText = document.getElementById('dynamic-text');
-        const phrases = ['Portfolio', 'Projects', 'Work', 'Achievements']; // Add more words as needed
-        let currentPhraseIndex = 0;
-
-        function typeText(phrase) {
-            dynamicText.textContent = '';
-            let index = 0;
-
-            const typing = setInterval(() => {
-                if (index < phrase.length) {
-                    dynamicText.textContent += phrase[index];
-                    index++;
-                } else {
-                    clearInterval(typing);
-                    setTimeout(() => eraseText(phrase), 1000); // Pause before erasing
-                }
-            }, 200); // Typing speed
-        }
-
-        function eraseText(phrase) {
-            let index = phrase.length;
-
-            const erasing = setInterval(() => {
-                if (index > 0) {
-                    dynamicText.textContent = phrase.substring(0, index - 1);
-                    index--;
-                } else {
-                    clearInterval(erasing);
-                    currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
-                    setTimeout(() => typeText(phrases[currentPhraseIndex]), 500); // Pause before typing next
-                }
-            }, 100); // Erasing speed
-        }
-
-        // Start the typing effect
-        typeText(phrases[currentPhraseIndex]);
-    </script>
 </body>
 </html>
